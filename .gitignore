@@ -1,0 +1,52 @@
+# --- Go specific ---
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with 'go test -c'
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (only if you don't want to vendoring)
+vendor/
+
+# Go build cache
+.cache/
+
+# --- Docker ---
+.dockerignore
+
+# --- OS specific (Mac) ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Editor-specific files (e.g., VSCode)
+.vscode/*
+
+# Vim temporary files
+[._]*.s[a-v]
+[._]*.sw[a-p]
+Session.vim
+netrwhist
+*~
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Temporary files
+*.tmp
+*.temp
+
+# AWS stuff for publishing static files
+.aws-credentials.json
+.awspublish*
