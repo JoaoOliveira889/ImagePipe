@@ -1,8 +1,12 @@
 # ImagePipe
 
-A high-performance, **cross-platform** CLI tool built with **Go** and **Docker** to optimize images for the web. It converts JPG/PNG files to **WebP**, handles automatic resizing, and supports both single-file and batch processing.
+> **Article:** [Optimizing Images for the Web with Go and Docker](https://joaooliveira.net/en/blog/2026/01/imagepipe/)
 
-## Features
+**ImagePipe** is a high-performance, cross-platform CLI tool built with **Go** and Docker designed to streamline image optimization for the web. It automates the conversion of JPG/PNG files to **WebP**, handles resizing, and supports both single-file and batch processing.
+
+---
+
+## What This Project Covers
 
 - **WebP Conversion:** Dramatically reduces file size while maintaining visual quality.
 - **Smart Resizing:** Automatically scales images to a max width of 1600px.
@@ -10,6 +14,13 @@ A high-performance, **cross-platform** CLI tool built with **Go** and **Docker**
 - **Interactive Mode:** Supports drag-and-drop directly into the terminal.
 
 ---
+
+## Tech Stack
+
+* Language: Go (Golang)
+* Containerization: Docker (Multi-stage builds)
+* Base OS: Alpine Linux
+* Libraries: Standard Go image processing packages
 
 ## Installation
 
@@ -64,7 +75,20 @@ The tool uses a multi-stage Docker build to keep the final image extremely light
 - Architecture: Automatically detects arm64 vs amd64 during build.
 - Logic: Volume mapping (-v) connects your local Mac folders to the container's internal processing directory.
 
-## Notes
+## About
 
-- Timestamps: Output files include a timestamp (e.g., image_123045.webp) to prevent overwriting your files.
-- Originals: Your original JPG/PNG files are never modified or deleted.
+This repository is part of my technical writing and learning notes.  
+If you found it useful, consider starring the repo and sharing feedback.
+
+- Author: Joao Oliveira
+- Blog: https://joaooliveira.net
+- Topics: Go, Docker, Web Performance, CLI Tools
+
+## Contributing
+
+Issues and pull requests are welcome.  
+If you plan a larger change, please open an issue first so we can align on scope.
+
+## License
+
+Licensed under the **MIT License**. See the `LICENSE` file for details.
